@@ -1,10 +1,36 @@
+import { Search } from '@material-ui/icons'
 import React from 'react'
-
+import logo from '../../assets/images/logo.ico'
+import './style.css'
 const Header = () => {
   return (
-    <div>
-      <p>the header</p>
-    </div>
+    <header>
+        <div className='header-container'>
+            <div className='header-top'>
+                <p>Free U.K. Shipping & Free Worldwide shipping on orders over £199</p>
+            </div>
+            <div className='header-bottom'>
+                <div className='logo'>
+                    <img src={logo} alt='jposh-logo' className='image-responsive' />
+                </div>
+                <nav className='nav-bar-wrapper'>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Categories</li>
+                        <li>contact</li>
+                        <li>Home</li>
+                    </ul>
+                </nav>
+                <div className='menu-group'>
+                    <div className='search-container'>
+                        <input />
+                        <Search />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
   )
 }
 
