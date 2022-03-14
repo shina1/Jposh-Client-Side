@@ -1,9 +1,12 @@
-function App() {
+import React from 'react'
+import Home from './screens/home-screen'
+
+const App = () => {
   return (
     <div>
-      <h1>This is a react app</h1>
+      <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
