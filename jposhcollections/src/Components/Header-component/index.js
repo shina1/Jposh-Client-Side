@@ -1,4 +1,5 @@
-import { Search } from '@material-ui/icons'
+import { Badge } from '@material-ui/core'
+import { Menu, Search, ShoppingCart } from '@material-ui/icons'
 import React from 'react'
 import logo from '../../assets/images/logo.ico'
 import './style.css'
@@ -16,10 +17,10 @@ const Header = () => {
                 <nav className='nav-bar-wrapper'>
                     <ul>
                         <li>Home</li>
-                        <li>About</li>
                         <li>Categories</li>
-                        <li>contact</li>
-                        <li>Home</li>
+                        <li>Accesories</li>
+                        <li>About</li>
+                        <li>Contact</li>
                     </ul>
                 </nav>
                 <div className='menu-group'>
@@ -27,6 +28,17 @@ const Header = () => {
                         <input />
                         <Search />
                     </div>
+                    <div className='menu-group-right'>
+                            <span>REGISTER</span>
+                            <span>SIGN IN</span>
+                            <Badge badgeContent={4} color="primary">
+                                 <ShoppingCart />
+                             </Badge>
+                    </div>
+                </div>
+                <div className='burger'>
+                   
+                    <Menu />
                 </div>
             </div>
         </div>
