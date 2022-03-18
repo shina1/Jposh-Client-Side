@@ -1,27 +1,27 @@
 import React from 'react'
 import styledComponents from 'styled-components'
 import { categories } from '../../data'
+import Divider from '../Divider'
 import CategoryItem from './CategoryItem'
+import './style.css'
 
 
-const Container = styledComponents.div`
-border:2px solid red;
-    diplay:flex;
-    flex-direction: row;
-    height: auto;
-    margin-bottom:10px;
-    width:100%;
+const Box = styledComponents.div`
+margin:100px auto;
 `
 
 const Categories = () => {
   return (
-    <Container>
-      {
-          categories.map(category => (
-              <CategoryItem  category={category}/>
-          ))
-      }
-    </Container>
+    <Box>
+      <Divider section={'CATEGORIES'}/>
+      <div className='category-container'>
+        {
+            categories.map(category => (
+                <CategoryItem  category={category} key={category.id}/>
+            ))
+        }
+      </div>
+    </Box>
   )
 }
 
