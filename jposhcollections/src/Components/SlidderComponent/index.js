@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
 import './style.css'
-import sliderImage1 from "../../assets/images/slider-image13.jpg"
-import sliderImage2 from "../../assets/images/slider-image11.jpg"
 import { sliderItems } from '../../data'
 
 
